@@ -18,6 +18,8 @@ This includes the report and source code for one of my analytical research repor
 ### PredictingNcaaMarchMadnessResults
 Predictive model to predict NCAA March Madness tournament results.
 
+*The dataset used in this analysis was obtained from a third-party resource. Please open the PredictingNcaaMarchMadnessResults folder to view acknowledgements citing the source of the dataset.*
+
 ### CsvSplitter
 Contains applications to split CSV files into a specified number of smaller files.
 
