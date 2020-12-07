@@ -1,6 +1,11 @@
 # data-science
 Data science projects, code, and resources
 
+## ComparisonTexasHospitals
+Analysis and comparison of Texas Hospital ratings. 
+
+*The dataset used in this analysis was obtained from a third-party resource. Please open the ComparisonTexasHospitals folder to view acknowledgements citing the source of the dataset.*
+
 ## CsvSplitter
 Contains applications to split CSV files into a specified number of smaller files.
 
@@ -12,6 +17,11 @@ This application is written in Python.
 Big data analysis of Dallas Animal Services Data.
 
 *The dataset used in this analysis was obtained from a third-party resource. Please open the DallasAnimalServicesAnalysis folder to view acknowledgements citing the source of the dataset.*
+
+## DallasCrimeAnalysis
+Analysis of the city of Dallas crime incident data. 
+
+*The dataset used in this analysis was obtained from a third-party resource. Please open the DallasCrimeAnalysis folder to view acknowledgements citing the source of the dataset.*
 
 ## ForecastingNbaThreePointers
 This includes the source code and dataset used in the following article:
