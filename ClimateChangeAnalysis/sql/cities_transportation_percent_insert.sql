@@ -1,20 +1,26 @@
--- View: public.cities_transportation_percent
-
--- DROP VIEW public.cities_transportation_percent;
-
-CREATE OR REPLACE VIEW public.cities_transportation_percent
- AS
- 
+insert into cities_transportation_percent
+(
+	city_id,
+	year,
+	taxis,
+	rail,
+	buses,
+	walking,
+	cycling,
+	ferries,
+	other,
+	private_motor
+)
 SELECT c.account_number AS city_id,
 2018 AS year,
-taxis.taxis,
-rail.rail,
-buses.buses,
-walking.walking,
-cycling.cycling,
-ferries.ferries,
-other.other,
-private_motor.private_motor
+cast(taxis.taxis as decimal),
+cast(rail.rail as decimal),
+cast(buses.buses as decimal),
+cast(walking.walking as decimal),
+cast(cycling.cycling as decimal),
+cast(ferries.ferries as decimal),
+cast(other.other as decimal),
+cast(private_motor.private_motor as decimal)
 FROM cities c
     left outer join (SELECT cr.city_id,
         nullif(regexp_replace(cr.response, '[^-0-9.]+', '', 'g'), '') AS taxis
@@ -69,14 +75,14 @@ FROM cities c
 UNION ALL
 SELECT c.account_number AS city_id,
 2019 AS year,
-taxis.taxis,
-rail.rail,
-buses.buses,
-walking.walking,
-cycling.cycling,
-ferries.ferries,
-other.other,
-private_motor.private_motor
+cast(taxis.taxis as decimal),
+cast(rail.rail as decimal),
+cast(buses.buses as decimal),
+cast(walking.walking as decimal),
+cast(cycling.cycling as decimal),
+cast(ferries.ferries as decimal),
+cast(other.other as decimal),
+cast(private_motor.private_motor as decimal)
 FROM cities c
     left outer join (SELECT cr.city_id,
         nullif(regexp_replace(cr.response, '[^-0-9.]+', '', 'g'), '') AS taxis
@@ -129,14 +135,14 @@ FROM cities c
 UNION ALL
 SELECT c.account_number AS city_id,
 2020 AS year,
-taxis.taxis,
-rail.rail,
-buses.buses,
-walking.walking,
-cycling.cycling,
-ferries.ferries,
-other.other,
-private_motor.private_motor
+cast(taxis.taxis as decimal),
+cast(rail.rail as decimal),
+cast(buses.buses as decimal),
+cast(walking.walking as decimal),
+cast(cycling.cycling as decimal),
+cast(ferries.ferries as decimal),
+cast(other.other as decimal),
+cast(private_motor.private_motor as decimal)
 FROM cities c
     left outer join (SELECT cr.city_id,
         nullif(regexp_replace(cr.response, '[^-0-9.]+', '', 'g'), '') AS taxis
@@ -186,7 +192,3 @@ FROM cities c
             JOIN city_questions cq ON cr.question_id = cq.id
             JOIN cities c_1 ON cr.city_id = c_1.account_number
         WHERE cq.question_number = '10.1' AND cr.survey_year = 2020 AND cq.column_name like 'Private%') private_motor ON private_motor.city_id = c.account_number;
- 
- ALTER TABLE public.cities_transportation_percent
-    OWNER TO fmccollum;
-
