@@ -33,3 +33,6 @@ UNION ALL
   AND cq.column_name::text ~~ '%Emissions%'::text 
   and cq.row_name not like '%TOTAL%'
 
+delete from cities_emissions_sector
+where emissions is null
+	or emissions <= 0
