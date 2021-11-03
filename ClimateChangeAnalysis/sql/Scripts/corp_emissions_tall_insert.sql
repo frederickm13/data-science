@@ -152,4 +152,5 @@ where emissions is null
 	or emissions <= 0
 
 delete from corp_emissions_tall
-where category is null
+where emissions is null
+	or emissions = 0
