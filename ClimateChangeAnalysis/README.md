@@ -1,4 +1,6 @@
 # ClimateChangeAnalysis (Unlocking Climate Solutions)
+Full video presentation may be found on YouTube: [https://youtu.be/LJKhARLmn-s](https://youtu.be/LJKhARLmn-s).
+
 As part of this project, I performed an analysis of CDP (www.cdp.net) climate survey data. This CDP climate survey data was retrieved from a Kaggle.com data competition (Unlocking Climate Solutions: https://www.kaggle.com/c/cdp-unlocking-climate-solutions/data). In order to help guide this project, I developed appropriate business questions and goals, as well as some more technical analytics goals. I have included each of these below: 
 
 Business questions.
