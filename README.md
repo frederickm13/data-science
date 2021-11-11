@@ -45,4 +45,8 @@ Predictive model to predict NCAA March Madness tournament results.
 ## ClimateChangeAnalysis
 Analysis of CDP climate survey data. Data was retrieved from a Kaggle.com data science competition.
 
+Full video presentation may be found on YouTube: [https://youtu.be/LJKhARLmn-s](https://youtu.be/LJKhARLmn-s).
+
+Article on my website may be found here: [Unlocking Climate Solutions (Climate Change Analysis)](https://erickmccollum.com/2021/11/11/climate-change-analysis.html).
+
 *The dataset used in this analysis was obtained from a third-party resource. Please open the ClimateChangeAnalysis folder to view acknowledgements citing the source of the dataset.*
