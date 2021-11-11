@@ -348,3 +348,19 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+
+# Any files that wish to remain hidden.
+*.hidden.*
+hidden/
+
+# MacOS system files.
+.DS_Store
+
+# Python venv folders.
+bin/
+lib/
+include/
+*.cfg
+
+# App settings file.
+appsettings.json
